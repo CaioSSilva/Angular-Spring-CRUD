@@ -19,7 +19,7 @@ public class Course {
     @JsonProperty("_id")
     private Long id;
 
-    @Column(length = 200, nullable = false)
+    @Column(length = 40, nullable = false)
     private String name;
 
     @Column(length = 20, nullable = false)

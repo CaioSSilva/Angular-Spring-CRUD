@@ -5,12 +5,12 @@
     <form [formGroup]="form">
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Name</mat-label>
-        <input matInput formControlName="name" maxlength="25" minlength="1" />
+        <input matInput formControlName="name" maxlength="40" required/>
       </mat-form-field>
 
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Category</mat-label>
-        <mat-select formControlName="category">
+        <mat-select formControlName="category" required>
           <mat-option value="Front-End">Front-End</mat-option>
           <mat-option value="Back-End">Back-End</mat-option>
         </mat-select>
