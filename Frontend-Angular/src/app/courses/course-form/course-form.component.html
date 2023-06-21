@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-toolbar color="primary">Course Information</mat-toolbar>
+
+  <mat-card-content>
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" maxlength="25" minlength="1" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category">
+          <mat-option value="Front-End">Front-End</mat-option>
+          <mat-option value="Back-End">Back-End</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-card-actions>
+        <button
+          mat-flat-button
+          color="primary"
+          aria-label="Send the Form"
+          (click)="onSubmit()"
+          type="submit"
+        >
+          Send
+        </button>
+        <button
+          mat-flat-button
+          color="warn"
+          aria-label="Back"
+          (click)="onBack()"
+        >
+          Back
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>

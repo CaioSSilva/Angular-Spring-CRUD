@@ -1,0 +1,18 @@
+mat-card {
+  margin: 20px auto;
+  max-width: 95%;
+}
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+mat-spinner{
+  height: 40px !important;
+  margin: 20px auto;
+}
+@media screen and (min-width: 768px) {
+  mat-card {
+    max-width: 75%;
+  }
+}

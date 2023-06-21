@@ -1,0 +1,18 @@
+mat-card {
+  margin: 20px auto;
+  max-width: 95%;
+}
+.full-width {
+  width: 100%;
+}
+mat-card-content {
+  margin-top: 15px;
+}
+mat-card-actions {
+  gap: 1em;
+}
+@media screen and (min-width: 768px) {
+  mat-card {
+    max-width: 60%;
+  }
+}
